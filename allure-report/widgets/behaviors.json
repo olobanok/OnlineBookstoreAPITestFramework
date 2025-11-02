@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"395a08553e3cf99e5a16449d291e4c24","name":"books","statistic":{"failed":2,"broken":0,"skipped":0,"passed":20,"unknown":0,"total":22}},{"uid":"599dcfeae12e561a44d5b1c38666baca","name":"authors","statistic":{"failed":0,"broken":0,"skipped":0,"passed":6,"unknown":0,"total":6}}]}
