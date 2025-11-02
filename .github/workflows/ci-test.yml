@@ -26,6 +26,11 @@ jobs:
       - name: Generate Allure report
         run: ./gradlew allureReport
 
+      - name: (Optional) Inspect results in CI log
+        run: |
+          ls -la build/allure-results
+          grep -n . build/allure-results/environment.properties || true
+
 
       - name: Deploy to GitHub Pages
         if: always()
