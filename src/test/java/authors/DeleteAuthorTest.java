@@ -18,7 +18,7 @@ public class DeleteAuthorTest extends BaseApiTest {
 
     @Test(groups = {AUTHORS, SMOKE})
     public void testDeleteAuthor() {
-        Integer newAuthorId = 595;
+        Integer newAuthorId = 9999;
         authorsClient.create(DataFactory.randomAuthor(newAuthorId, 1)).spec(OK_200);
         authorsClient.delete(newAuthorId).statusCode(200);
         List<Author> authorList = authorsClient.list().spec(OK_200)
