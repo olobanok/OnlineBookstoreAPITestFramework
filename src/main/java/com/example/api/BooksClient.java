@@ -4,8 +4,8 @@ import io.restassured.response.ValidatableResponse;
 
 public class BooksClient extends BaseClient {
 
-    private static final String BOOKS_URL = "/com/example/api/v1/Books";
-    private static final String BOOKS_ID_URL = "/com/example/api/v1/Books/{id}";
+    private static final String BOOKS_URL = "/api/v1/Books";
+    private static final String BOOKS_ID_URL = "/api/v1/Books/{id}";
 
     public ValidatableResponse list() {
         return givenBase().when().get(BOOKS_URL).then();

@@ -4,9 +4,9 @@ import io.restassured.response.ValidatableResponse;
 
 public class AuthorsClient extends BaseClient {
 
-    private static final String AUTHORS_URL = "/com/example/api/v1/Authors";
-    private static final String AUTHORS_ID_URL = "/com/example/api/v1/Authors/{id}";
-    private static final String AUTHORS_BOOK_ID_URL = "/com/example/api/v1/Authors/authors/books/{idBook}";
+    private static final String AUTHORS_URL = "/api/v1/Authors";
+    private static final String AUTHORS_ID_URL = "/api/v1/Authors/{id}";
+    private static final String AUTHORS_BOOK_ID_URL = "/api/v1/Authors/authors/books/{idBook}";
 
     public ValidatableResponse list() {
         return givenBase().when().get(AUTHORS_URL).then();
